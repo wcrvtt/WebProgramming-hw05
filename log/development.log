@@ -1,0 +1,2839 @@
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:29:32 +0700
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.9ms | Allocations: 657)
+Completed 200 OK in 62ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 5130)
+
+
+Started GET "/main/select" for 127.0.0.1 at 2022-09-08 14:29:38 +0700
+  
+SyntaxError (/home/watcharavit/hw04/app/controllers/main_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/main/" for 127.0.0.1 at 2022-09-08 14:29:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/main/" for 127.0.0.1 at 2022-09-08 14:31:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/main/select" for 127.0.0.1 at 2022-09-08 14:31:31 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 3.2ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 2797.2ms | Allocations: 87388)
+Completed 200 OK in 2825ms (Views: 2810.8ms | Allocations: 88387)
+
+
+Started GET "/main/select" for 127.0.0.1 at 2022-09-08 14:34:10 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 1.0ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 3032)
+Completed 200 OK in 52ms (Views: 48.5ms | Allocations: 3877)
+
+
+Started GET "/main/select" for 127.0.0.1 at 2022-09-08 14:46:46 +0700
+  
+SyntaxError (/home/watcharavit/hw04/app/controllers/main_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/main_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/main/select" for 127.0.0.1 at 2022-09-08 14:47:37 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 82.5ms | Allocations: 13924)
+Completed 200 OK in 96ms (Views: 90.9ms | Allocations: 14573)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-08 14:47:44 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.4ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 2478)
+Completed 200 OK in 20ms (Views: 19.3ms | Allocations: 2868)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:53:02 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 1287)
+Completed 500 Internal Server Error in 16ms (Allocations: 2236)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Main#select</h1>
+<p>Find me in app/views/main/select.html.erb</p>
+
+<%= form_width url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+  <%= f.hidden_field :root, value = true %>
+  <%= f.collection_select :num, @amount, :to_s, promt: true %>
+  <%= f.submit %>
+<%= end %>
+
+):
+1:    <h1>Main#select</h1>
+2:    <p>Find me in app/views/main/select.html.erb</p>
+3:    
+4:    <%= form_width url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+5:      <%= f.hidden_field :root, value = true %>
+6:      <%= f.collection_select :num, @amount, :to_s, promt: true %>
+7:      <%= f.submit %>
+8:    <%= end %>
+  
+app/views/main/select.html.erb:8: syntax error, unexpected `end'
+app/views/main/select.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/main/select.html.erb:8: syntax error, unexpected `end'
+app/views/main/select.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/main/select.html.erb:8: syntax error, unexpected `end'
+app/views/main/select.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/main/select.html.erb:8: syntax error, unexpected `end'
+app/views/main/select.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/main/select.html.erb:8: syntax error, unexpected `end'
+app/views/main/select.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/main/select.html.erb:8: syntax error, unexpected `end'
+app/views/main/select.html.erb:11: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:53:24 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 105.5ms | Allocations: 4775)
+  Rendered layout layouts/application.html.erb (Duration: 106.3ms | Allocations: 4869)
+Completed 500 Internal Server Error in 115ms (Allocations: 5682)
+
+
+  
+ActionView::Template::Error (undefined method `form_width' for #<ActionView::Base:0x00000000019ff0>
+
+'.freeze;@output_buffer.append=  form_width url: "/main/test", method: :post, data: {turbo: false} do |f| @output_buffer.safe_append='
+                                 ^^^^^^^^^^
+Did you mean?  form_with):
+    1: <h1>Main#select</h1>
+    2: <p>Find me in app/views/main/select.html.erb</p>
+    3: 
+    4: <%= form_width url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+    5:   <%= f.hidden_field :root, value = true %>
+    6:   <%= f.collection_select :num, @amount, :to_s, promt: true %>
+    7:   <%= f.submit %>
+  
+app/views/main/select.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:54:54 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1271)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1365)
+Completed 500 Internal Server Error in 20ms (Allocations: 2176)
+
+
+  
+ActionView::Template::Error (no implicit conversion of true into Hash):
+    2: <p>Find me in app/views/main/select.html.erb</p>
+    3: 
+    4: <%= form_with url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+    5:   <%= f.hidden_field :root, value = true %>
+    6:   <%= f.collection_select :num, @amount, :to_s, promt: true %>
+    7:   <%= f.submit %>
+    8: <% end %>
+  
+app/views/main/select.html.erb:5
+app/views/main/select.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:55:33 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 63.1ms | Allocations: 10186)
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 10289)
+Completed 500 Internal Server Error in 76ms (Allocations: 11098)
+
+
+  
+ActionView::Template::Error ({:promt=>true} is not a symbol nor a string):
+    3: 
+    4: <%= form_with url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+    5:   <%= f.hidden_field :root, value: true %>
+    6:   <%= f.collection_select :num, @amount, :to_s, promt: true %>
+    7:   <%= f.submit %>
+    8: <% end %>
+  
+app/views/main/select.html.erb:6
+app/views/main/select.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:55:58 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2169)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2263)
+Completed 500 Internal Server Error in 25ms (Allocations: 3072)
+
+
+  
+ActionView::Template::Error ({:prompt=>true} is not a symbol nor a string):
+    3: 
+    4: <%= form_with url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+    5:   <%= f.hidden_field :root, value: true %>
+    6:   <%= f.collection_select :num, @amount, :to_s, prompt: true %>
+    7:   <%= f.submit %>
+    8: <% end %>
+  
+app/views/main/select.html.erb:6
+app/views/main/select.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-09-08 14:56:46 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 40.2ms | Allocations: 4422)
+  Rendered layout layouts/application.html.erb (Duration: 119.4ms | Allocations: 18255)
+Completed 200 OK in 126ms (Views: 123.7ms | Allocations: 19104)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 14:56:52 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"3", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.5ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2469)
+Completed 200 OK in 25ms (Views: 20.0ms | Allocations: 3200)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:10:00 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2246)
+  Rendered layout layouts/application.html.erb (Duration: 93.7ms | Allocations: 16127)
+Completed 200 OK in 107ms (Views: 105.2ms | Allocations: 17097)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:10:05 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"5", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 52.5ms | Allocations: 15106)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 17419)
+Completed 200 OK in 78ms (Views: 74.5ms | Allocations: 18017)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-08 15:12:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:12:12 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2270)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 4859)
+Completed 200 OK in 38ms (Views: 35.9ms | Allocations: 5656)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:12:15 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"1", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 15.9ms | Allocations: 3650)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 5841)
+Completed 200 OK in 37ms (Views: 34.9ms | Allocations: 6402)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:12:35 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject 1"=>"", "score 1"=>"", "commit"=>"Save "}
+Completed 500 Internal Server Error in 7ms (Allocations: 1586)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:32:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:13:51 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"4", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 40.8ms | Allocations: 12055)
+  Rendered layout layouts/application.html.erb (Duration: 134.4ms | Allocations: 25883)
+Completed 200 OK in 158ms (Views: 150.5ms | Allocations: 27162)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:14:10 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"a", "score1"=>"12", "subject2"=>"cc", "score2"=>"23", "subject3"=>"c", "score3"=>"4", "subject4"=>"cs", "score4"=>"123", "commit"=>"Save "}
+Completed 500 Internal Server Error in 5ms (Allocations: 1628)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:32:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:14:20 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"a", "score1"=>"12", "subject2"=>"cc", "score2"=>"23", "subject3"=>"c", "score3"=>"4", "subject4"=>"cs", "score4"=>"1", "commit"=>"Save "}
+Completed 500 Internal Server Error in 8ms (Allocations: 1541)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:32:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:15:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"a", "score1"=>"12", "subject2"=>"cc", "score2"=>"23", "subject3"=>"c", "score3"=>"4", "subject4"=>"cs", "score4"=>"1", "commit"=>"Save "}
+Completed 500 Internal Server Error in 13ms (Allocations: 1640)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:32:in `test'
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:16:42 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 21.9ms | Allocations: 2238)
+  Rendered layout layouts/application.html.erb (Duration: 124.6ms | Allocations: 15877)
+Completed 200 OK in 131ms (Views: 129.7ms | Allocations: 16594)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:16:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"6", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 55.7ms | Allocations: 17019)
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 19218)
+Completed 200 OK in 78ms (Views: 76.4ms | Allocations: 19729)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:17:05 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"qwe", "score2"=>"33", "subject3"=>"asd", "score3"=>"23", "subject4"=>"w", "score4"=>"45", "subject5"=>"fs", "score5"=>"6", "subject6"=>"egr", "score6"=>"78", "commit"=>"Save "}
+Completed 500 Internal Server Error in 4ms (Allocations: 1540)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:32:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:18:06 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"qwe", "score2"=>"33", "subject3"=>"asd", "score3"=>"23", "subject4"=>"w", "score4"=>"45", "subject5"=>"fs", "score5"=>"6", "subject6"=>"egr", "score6"=>"78", "commit"=>"Save "}
+Completed 500 Internal Server Error in 11ms (Allocations: 1636)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:18:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"qwe", "score2"=>"33", "subject3"=>"asd", "score3"=>"23", "subject4"=>"w", "score4"=>"45", "subject5"=>"fs", "score5"=>"6", "subject6"=>"egr", "score6"=>"78", "commit"=>"Save "}
+Completed 500 Internal Server Error in 26ms (Allocations: 1509)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:19:09 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2281)
+  Rendered layout layouts/application.html.erb (Duration: 90.7ms | Allocations: 16109)
+Completed 200 OK in 99ms (Views: 97.5ms | Allocations: 16997)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:19:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"6", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 104.6ms | Allocations: 25776)
+  Rendered layout layouts/application.html.erb (Duration: 118.6ms | Allocations: 28092)
+Completed 200 OK in 131ms (Views: 124.5ms | Allocations: 28667)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:19:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"sd", "score2"=>"7", "subject3"=>"fd", "score3"=>"6", "subject4"=>"gb", "score4"=>"18", "subject5"=>"cb", "score5"=>"10", "subject6"=>"xz", "score6"=>"38", "commit"=>"Save "}
+Completed 500 Internal Server Error in 9ms (Allocations: 1585)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:24:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"sd", "score2"=>"7", "subject3"=>"fd", "score3"=>"6", "subject4"=>"gb", "score4"=>"18", "subject5"=>"cb", "score5"=>"10", "subject6"=>"xz", "score6"=>"38", "commit"=>"Save "}
+Completed 500 Internal Server Error in 3ms (Allocations: 752)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/main_controller.rb:35:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:27:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"sd", "score2"=>"7", "subject3"=>"fd", "score3"=>"6", "subject4"=>"gb", "score4"=>"18", "subject5"=>"cb", "score5"=>"10", "subject6"=>"xz", "score6"=>"38", "commit"=>"Save "}
+Completed 500 Internal Server Error in 9ms (Allocations: 1631)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:33:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:28:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"sd", "score2"=>"7", "subject3"=>"fd", "score3"=>"6", "subject4"=>"gb", "score4"=>"18", "subject5"=>"cb", "score5"=>"10", "subject6"=>"xz", "score6"=>"38", "commit"=>"Save "}
+Completed 500 Internal Server Error in 12ms (Allocations: 1629)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:33:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:28:51 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"sd", "score2"=>"7", "subject3"=>"fd", "score3"=>"6", "subject4"=>"gb", "score4"=>"18", "subject5"=>"cb", "score5"=>"10", "subject6"=>"xz", "score6"=>"38", "commit"=>"Save "}
+Completed 500 Internal Server Error in 9ms (Allocations: 1642)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:29:36 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"as", "score1"=>"12", "subject2"=>"sd", "score2"=>"7", "subject3"=>"fd", "score3"=>"6", "subject4"=>"gb", "score4"=>"18", "subject5"=>"cb", "score5"=>"10", "subject6"=>"xz", "score6"=>"38", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 8ms (Allocations: 1183)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:29:37 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 3.9ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 14121)
+Completed 200 OK in 84ms (Views: 83.1ms | Allocations: 14782)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-08 15:30:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:30:56 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 10.1ms | Allocations: 2014)
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 15565)
+Completed 200 OK in 90ms (Views: 89.0ms | Allocations: 16209)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:30:59 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"2", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 26.9ms | Allocations: 6047)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 8247)
+Completed 200 OK in 50ms (Views: 48.4ms | Allocations: 8764)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:31:09 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"ad", "score1"=>"12", "subject2"=>"asfdf", "score2"=>"10", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 6ms (Allocations: 914)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:31:09 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 33)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 2386)
+Completed 200 OK in 18ms (Views: 16.9ms | Allocations: 2649)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:32:19 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"ad", "score1"=>"12", "subject2"=>"asfdf", "score2"=>"10", "commit"=>"Save "}
+Completed 500 Internal Server Error in 8ms (Allocations: 1626)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:33:in `test'
+Started GET "/main/test" for 127.0.0.1 at 2022-09-08 15:34:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:35:13 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2053)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 15689)
+Completed 200 OK in 89ms (Views: 88.5ms | Allocations: 16278)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:35:17 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"5", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 42.4ms | Allocations: 14433)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 16624)
+Completed 200 OK in 67ms (Views: 64.9ms | Allocations: 17143)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:35:35 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Completed 500 Internal Server Error in 6ms (Allocations: 1524)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:33:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:36:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Completed 500 Internal Server Error in 2ms (Allocations: 753)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:37:01 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Completed 500 Internal Server Error in 7ms (Allocations: 749)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:38:15 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Completed 500 Internal Server Error in 4ms (Allocations: 748)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/main_controller.rb:35:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:39:16 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 13ms (Allocations: 1082)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:39:17 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 93.8ms | Allocations: 13937)
+Completed 200 OK in 104ms (Views: 103.4ms | Allocations: 14525)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:39:24 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 6ms (Allocations: 453)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:39:24 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 2367)
+Completed 200 OK in 22ms (Views: 21.2ms | Allocations: 2643)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:39:31 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 5ms (Allocations: 408)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:39:31 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2382)
+Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 2645)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:41:41 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 6.4ms | Allocations: 216)
+  Rendered layout layouts/application.html.erb (Duration: 73.1ms | Allocations: 14315)
+Completed 200 OK in 82ms (Views: 80.3ms | Allocations: 15281)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:41:45 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=1&sub=1
+Completed 302 Found in 8ms (Allocations: 998)
+
+
+Started GET "/main/result?score=1&sub=1" for 127.0.0.1 at 2022-09-08 15:41:46 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"1", "sub"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2380)
+Completed 200 OK in 20ms (Views: 19.1ms | Allocations: 2656)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:41:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=1&sub=1
+Completed 302 Found in 4ms (Allocations: 417)
+
+
+Started GET "/main/result?score=1&sub=1" for 127.0.0.1 at 2022-09-08 15:41:57 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"1", "sub"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 30)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2377)
+Completed 200 OK in 18ms (Views: 16.7ms | Allocations: 2640)
+
+
+Started GET "/main/result?score=1&sub=1" for 127.0.0.1 at 2022-09-08 15:42:30 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"1", "sub"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 13944)
+Completed 200 OK in 78ms (Views: 76.7ms | Allocations: 14585)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:42:38 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Completed 500 Internal Server Error in 2ms (Allocations: 693)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:43:06 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Completed 500 Internal Server Error in 2ms (Allocations: 652)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/main_controller.rb:34:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:43:18 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"df", "score1"=>"12", "subject2"=>"sdfs", "score2"=>"23", "subject3"=>"sdf", "score3"=>"4", "subject4"=>"d", "score4"=>"55", "subject5"=>"gggg", "score5"=>"54", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 106ms (Allocations: 1108)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:43:18 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 13938)
+Completed 200 OK in 76ms (Views: 75.8ms | Allocations: 14526)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:44:02 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2271)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 4845)
+Completed 200 OK in 41ms (Views: 39.5ms | Allocations: 5714)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:44:07 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"3", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 29.1ms | Allocations: 9265)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 11456)
+Completed 200 OK in 56ms (Views: 54.0ms | Allocations: 12005)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:44:11 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 4ms (Allocations: 453)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:44:11 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 1.0ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 2522)
+Completed 200 OK in 24ms (Views: 22.6ms | Allocations: 2839)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:47:27 +0700
+Processing by MainController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/root.html.erb within layouts/application
+  Rendered main/root.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2124)
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 15870)
+Completed 200 OK in 94ms (Views: 92.2ms | Allocations: 16841)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:47:33 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"6", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 55.7ms | Allocations: 17647)
+  Rendered layout layouts/application.html.erb (Duration: 106.0ms | Allocations: 19843)
+Completed 200 OK in 117ms (Views: 114.3ms | Allocations: 20414)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:47:39 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "subject5"=>"", "score5"=>"", "subject6"=>"", "score6"=>"", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 9ms (Allocations: 958)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:47:39 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 1.3ms | Allocations: 172)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 2527)
+Completed 200 OK in 21ms (Views: 20.3ms | Allocations: 2844)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:47:42 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "subject5"=>"", "score5"=>"", "subject6"=>"", "score6"=>"", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 4ms (Allocations: 408)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:47:42 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2397)
+Completed 200 OK in 20ms (Views: 19.8ms | Allocations: 2660)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:47:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"", "score1"=>"", "subject2"=>"23", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "subject5"=>"", "score5"=>"", "subject6"=>"", "score6"=>"", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 5ms (Allocations: 402)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:47:47 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2388)
+Completed 200 OK in 21ms (Views: 20.5ms | Allocations: 2651)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:48:40 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"6", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 51.1ms | Allocations: 17325)
+  Rendered layout layouts/application.html.erb (Duration: 121.3ms | Allocations: 30944)
+Completed 200 OK in 128ms (Views: 126.3ms | Allocations: 31887)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:48:44 +0700
+Processing by MainController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/root.html.erb within layouts/application
+  Rendered main/root.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1903)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 4103)
+Completed 200 OK in 27ms (Views: 26.3ms | Allocations: 4388)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:48:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"4", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 35.7ms | Allocations: 11618)
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 13809)
+Completed 200 OK in 57ms (Views: 53.5ms | Allocations: 14308)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:48:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 10ms (Allocations: 952)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-08 15:48:49 +0700
+Processing by MainController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.5ms | Allocations: 33)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2383)
+Completed 200 OK in 16ms (Views: 15.7ms | Allocations: 2646)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:55:10 +0700
+Processing by MainController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/root.html.erb within layouts/application
+  Rendered main/root.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2238)
+  Rendered layout layouts/application.html.erb (Duration: 79.6ms | Allocations: 16091)
+Completed 200 OK in 122ms (Views: 89.2ms | Allocations: 17060)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:55:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"2", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 19.5ms | Allocations: 6490)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 8687)
+Completed 200 OK in 41ms (Views: 38.7ms | Allocations: 9256)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:55:18 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"2", "subject1"=>"dfsdfsd", "score1"=>"", "subject2"=>"sdfsd", "score2"=>"", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 18.7ms | Allocations: 6972)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 9163)
+Completed 200 OK in 36ms (Views: 34.8ms | Allocations: 9652)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:55:24 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"2", "subject1"=>"dfsdfsd", "score1"=>"12", "subject2"=>"sdfsd", "score2"=>"7", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=7&sub=sdfsd
+Completed 302 Found in 8ms (Allocations: 1014)
+
+
+Started GET "/main/result?score=7&sub=sdfsd" for 127.0.0.1 at 2022-09-08 15:55:24 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"7", "sub"=>"sdfsd"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 2.2ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 2509)
+Completed 200 OK in 19ms (Views: 18.3ms | Allocations: 2847)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-08 15:56:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:56:48 +0700
+Processing by MainController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/root.html.erb within layouts/application
+  Rendered main/root.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2024)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 15659)
+Completed 200 OK in 81ms (Views: 76.6ms | Allocations: 16303)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:56:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"3", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 23.1ms | Allocations: 8869)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 11074)
+Completed 200 OK in 47ms (Views: 37.9ms | Allocations: 11582)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:56:58 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"3", "subject1"=>"", "score1"=>"33", "subject2"=>"", "score2"=>"4", "subject3"=>"", "score3"=>"12", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 28.2ms | Allocations: 10237)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 12435)
+Completed 200 OK in 47ms (Views: 45.1ms | Allocations: 12915)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:57:02 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"3", "subject1"=>"as", "score1"=>"33", "subject2"=>"sdf", "score2"=>"4", "subject3"=>"ff", "score3"=>"12", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=4&sub=sdf
+Completed 302 Found in 6ms (Allocations: 1032)
+
+
+Started GET "/main/result?score=4&sub=sdf" for 127.0.0.1 at 2022-09-08 15:57:02 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"4", "sub"=>"sdf"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2364)
+Completed 200 OK in 18ms (Views: 17.0ms | Allocations: 2647)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:57:31 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"3", "subject1"=>"as", "score1"=>"33", "subject2"=>"sdf", "score2"=>"4", "subject3"=>"ff", "score3"=>"12", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=4&sub=sdf
+Completed 302 Found in 4ms (Allocations: 457)
+
+
+Started GET "/main/result?score=4&sub=sdf" for 127.0.0.1 at 2022-09-08 15:57:31 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"4", "sub"=>"sdf"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2366)
+Completed 200 OK in 20ms (Views: 16.5ms | Allocations: 2648)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:57:38 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"3", "subject1"=>"as", "score1"=>"33", "subject2"=>"sdf", "score2"=>"4", "subject3"=>"ff", "score3"=>"12", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=4&sub=sdf
+Completed 302 Found in 11ms (Allocations: 1183)
+
+
+Started GET "/main/result?score=4&sub=sdf" for 127.0.0.1 at 2022-09-08 15:57:38 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"4", "sub"=>"sdf"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 13906)
+Completed 200 OK in 65ms (Views: 64.2ms | Allocations: 14514)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:57:43 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"5", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 47.6ms | Allocations: 14547)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 16738)
+Completed 200 OK in 70ms (Views: 68.1ms | Allocations: 17234)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:58:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"5", "subject1"=>"ss", "score1"=>"7", "subject2"=>"asdd", "score2"=>"33", "subject3"=>"asd", "score3"=>"1", "subject4"=>"dd", "score4"=>"3", "subject5"=>"dddff", "score5"=>"2", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=7&sub=ss
+Completed 302 Found in 6ms (Allocations: 504)
+
+
+Started GET "/main/result?score=7&sub=ss" for 127.0.0.1 at 2022-09-08 15:58:00 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"7", "sub"=>"ss"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2369)
+Completed 200 OK in 16ms (Views: 15.2ms | Allocations: 2651)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:58:03 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"5", "subject1"=>"ss", "score1"=>"7", "subject2"=>"asdd", "score2"=>"33", "subject3"=>"asd", "score3"=>"1", "subject4"=>"dd", "score4"=>"3", "subject5"=>"dddff", "score5"=>"2", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=7&sub=ss
+Completed 302 Found in 5ms (Allocations: 470)
+
+
+Started GET "/main/result?score=7&sub=ss" for 127.0.0.1 at 2022-09-08 15:58:03 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"7", "sub"=>"ss"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2369)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 2651)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:58:08 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"5", "subject1"=>"ss", "score1"=>"7", "subject2"=>"asdd", "score2"=>"4", "subject3"=>"asd", "score3"=>"1", "subject4"=>"dd", "score4"=>"3", "subject5"=>"dddff", "score5"=>"2", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=7&sub=ss
+Completed 302 Found in 4ms (Allocations: 461)
+
+
+Started GET "/main/result?score=7&sub=ss" for 127.0.0.1 at 2022-09-08 15:58:08 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"7", "sub"=>"ss"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2384)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 2666)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:58:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"5", "subject1"=>"ss", "score1"=>"6", "subject2"=>"asdd", "score2"=>"4", "subject3"=>"asd", "score3"=>"1", "subject4"=>"dd", "score4"=>"3", "subject5"=>"dddff", "score5"=>"2", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=6&sub=ss
+Completed 302 Found in 6ms (Allocations: 455)
+
+
+Started GET "/main/result?score=6&sub=ss" for 127.0.0.1 at 2022-09-08 15:58:12 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"6", "sub"=>"ss"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2371)
+Completed 200 OK in 18ms (Views: 17.4ms | Allocations: 2653)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:58:15 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"5", "subject1"=>"ss", "score1"=>"3", "subject2"=>"asdd", "score2"=>"4", "subject3"=>"asd", "score3"=>"1", "subject4"=>"dd", "score4"=>"3", "subject5"=>"dddff", "score5"=>"2", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=4&sub=asdd
+Completed 302 Found in 5ms (Allocations: 473)
+
+
+Started GET "/main/result?score=4&sub=asdd" for 127.0.0.1 at 2022-09-08 15:58:15 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"4", "sub"=>"asdd"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2377)
+Completed 200 OK in 16ms (Views: 15.6ms | Allocations: 2660)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:58:22 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"5", "subject1"=>"ss", "score1"=>"12", "subject2"=>"asdd", "score2"=>"4", "subject3"=>"asd", "score3"=>"1", "subject4"=>"dd", "score4"=>"3", "subject5"=>"dddff", "score5"=>"2", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=4&sub=asdd
+Completed 302 Found in 5ms (Allocations: 464)
+
+
+Started GET "/main/result?score=4&sub=asdd" for 127.0.0.1 at 2022-09-08 15:58:22 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"4", "sub"=>"asdd"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2384)
+Completed 200 OK in 18ms (Views: 17.1ms | Allocations: 2666)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-08 15:58:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-08 15:58:59 +0700
+Processing by MainController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/root.html.erb within layouts/application
+  Rendered main/root.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2017)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 15659)
+Completed 200 OK in 80ms (Views: 79.5ms | Allocations: 16303)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:59:02 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"8", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 85.9ms | Allocations: 22894)
+  Rendered layout layouts/application.html.erb (Duration: 102.4ms | Allocations: 25099)
+Completed 200 OK in 112ms (Views: 106.9ms | Allocations: 25616)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:59:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"8", "subject1"=>"er", "score1"=>"", "subject2"=>"w", "score2"=>"", "subject3"=>"dq", "score3"=>"", "subject4"=>"t", "score4"=>"", "subject5"=>"gh", "score5"=>"", "subject6"=>"a", "score6"=>"", "subject7"=>"d", "score7"=>"", "subject8"=>"sd", "score8"=>"", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 83.1ms | Allocations: 26566)
+  Rendered layout layouts/application.html.erb (Duration: 95.9ms | Allocations: 28757)
+Completed 200 OK in 101ms (Views: 98.6ms | Allocations: 29234)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:59:27 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"8", "subject1"=>"er", "score1"=>"2", "subject2"=>"w", "score2"=>"3", "subject3"=>"dq", "score3"=>"1", "subject4"=>"t", "score4"=>"6", "subject5"=>"gh", "score5"=>"5", "subject6"=>"a", "score6"=>"18", "subject7"=>"d", "score7"=>"28", "subject8"=>"sd", "score8"=>"23", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=28&sub=d
+Completed 302 Found in 6ms (Allocations: 1062)
+
+
+Started GET "/main/result?score=28&sub=d" for 127.0.0.1 at 2022-09-08 15:59:27 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"28", "sub"=>"d"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2388)
+Completed 200 OK in 18ms (Views: 17.6ms | Allocations: 2672)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-08 15:59:30 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"8", "subject1"=>"er", "score1"=>"2", "subject2"=>"w", "score2"=>"3", "subject3"=>"dq", "score3"=>"1", "subject4"=>"t", "score4"=>"6", "subject5"=>"gh", "score5"=>"5", "subject6"=>"a", "score6"=>"18", "subject7"=>"d", "score7"=>"28", "subject8"=>"sd", "score8"=>"23", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=28&sub=d
+Completed 302 Found in 6ms (Allocations: 490)
+
+
+Started GET "/main/result?score=28&sub=d" for 127.0.0.1 at 2022-09-08 15:59:30 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"28", "sub"=>"d"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2375)
+Completed 200 OK in 21ms (Views: 19.9ms | Allocations: 2657)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:18:45 +0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/root.html.erb within layouts/application
+  Rendered main/root.html.erb within layouts/application (Duration: 45.1ms | Allocations: 3804)
+  Rendered layout layouts/application.html.erb (Duration: 626.7ms | Allocations: 37970)
+Completed 200 OK in 661ms (Views: 636.2ms | ActiveRecord: 0.0ms | Allocations: 41371)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:18:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"6", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 54.2ms | Allocations: 18206)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 20518)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms | Allocations: 21305)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-22 02:20:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:20:20 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"true", "num"=>"6", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 39.4ms | Allocations: 17864)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 20426)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 21517)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:20:42 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"6", "subject1"=>"df", "score1"=>"12", "subject2"=>"a", "score2"=>"5", "subject3"=>"s", "score3"=>"55", "subject4"=>"3", "score4"=>"6", "subject5"=>"2", "score5"=>"45", "subject6"=>"f", "score6"=>"53", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=55&sub=s
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 1076)
+
+
+Started GET "/main/result?score=55&sub=s" for 127.0.0.1 at 2022-09-22 02:20:42 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"55", "sub"=>"s"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.8ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2496)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 2831)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:20:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"6", "subject1"=>"df", "score1"=>"12", "subject2"=>"a", "score2"=>"5", "subject3"=>"s", "score3"=>"55", "subject4"=>"3", "score4"=>"6", "subject5"=>"2", "score5"=>"45", "subject6"=>"f", "score6"=>"53", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=55&sub=s
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 470)
+
+
+Started GET "/main/result?score=55&sub=s" for 127.0.0.1 at 2022-09-22 02:20:47 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"55", "sub"=>"s"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 30)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2390)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 2658)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:20:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"6", "subject1"=>"df", "score1"=>"12", "subject2"=>"a", "score2"=>"5", "subject3"=>"s", "score3"=>"55", "subject4"=>"3", "score4"=>"6", "subject5"=>"2", "score5"=>"45", "subject6"=>"f", "score6"=>"53", "commit"=>"Save "}
+Redirected to http://localhost:3000/main/result?score=55&sub=s
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 465)
+
+
+Started GET "/main/result?score=55&sub=s" for 127.0.0.1 at 2022-09-22 02:20:50 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"55", "sub"=>"s"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.1ms | Allocations: 30)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2371)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 2637)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:22:20 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "root"=>"false", "num"=>"6", "subject1"=>"df", "score1"=>"12", "subject2"=>"a", "score2"=>"5", "subject3"=>"s", "score3"=>"55", "subject4"=>"3", "score4"=>"6", "subject5"=>"2", "score5"=>"45", "subject6"=>"", "score6"=>"53", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 69.3ms | Allocations: 17810)
+  Rendered layout layouts/application.html.erb (Duration: 87.1ms | Allocations: 20017)
+Completed 200 OK in 94ms (Views: 88.2ms | ActiveRecord: 0.0ms | Allocations: 20515)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:25:11 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 33.5ms | Allocations: 5997)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 6091)
+Completed 500 Internal Server Error in 42ms (Allocations: 6890)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+
+        options = collection.map do |element|
+                            ^^^^):
+    1: <%= form_with url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+    2:   <%= f.hidden_field :select, value: true %>
+    3:   <%= f.collection_select :num, @amount, :to_s, :to_s, prompt: true %>
+    4:   <%= f.submit %>
+    5: <% end %>
+  
+app/views/main/select.html.erb:3
+app/views/main/select.html.erb:1
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:25:47 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2020)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 15888)
+Completed 200 OK in 87ms (Views: 86.3ms | Allocations: 16529)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:25:51 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"9", "commit"=>"Save "}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 101.2ms | Allocations: 26131)
+  Rendered layout layouts/application.html.erb (Duration: 113.4ms | Allocations: 28337)
+Completed 200 OK in 120ms (Views: 118.5ms | Allocations: 28933)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:26:18 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2216)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 4790)
+Completed 200 OK in 33ms (Views: 30.1ms | Allocations: 5616)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:26:20 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"9", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 72.9ms | Allocations: 26122)
+  Rendered layout layouts/application.html.erb (Duration: 88.9ms | Allocations: 28313)
+Completed 200 OK in 93ms (Views: 91.7ms | Allocations: 28891)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:27:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"9", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 63.8ms | Allocations: 26202)
+  Rendered layout layouts/application.html.erb (Duration: 77.7ms | Allocations: 28772)
+Completed 200 OK in 93ms (Views: 88.0ms | Allocations: 29804)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-22 02:27:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:27:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 23.5ms | Allocations: 8032)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 10609)
+Completed 200 OK in 51ms (Views: 45.1ms | Allocations: 11630)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:28:09 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2208)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 4782)
+Completed 200 OK in 35ms (Views: 32.4ms | Allocations: 5626)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:28:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 23.0ms | Allocations: 9242)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 11433)
+Completed 200 OK in 48ms (Views: 46.3ms | Allocations: 12001)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:28:33 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"3", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 29.0ms | Allocations: 11525)
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 13716)
+Completed 200 OK in 49ms (Views: 45.0ms | Allocations: 14175)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:28:53 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"3", "subject1"=>"", "score1"=>"", "subject2"=>"d", "score2"=>"", "subject3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 42.3ms | Allocations: 11080)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 13280)
+Completed 200 OK in 72ms (Views: 70.4ms | Allocations: 13762)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:28:58 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"3", "subject1"=>"f", "score1"=>"", "subject2"=>"d", "score2"=>"", "subject3"=>"q", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 29.3ms | Allocations: 10187)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 12378)
+Completed 200 OK in 52ms (Views: 48.6ms | Allocations: 12870)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:29:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"3", "subject1"=>"f", "score1"=>"", "subject2"=>"d", "score2"=>"2", "subject3"=>"q", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 25.1ms | Allocations: 9741)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 11936)
+Completed 200 OK in 64ms (Views: 60.2ms | Allocations: 12416)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-22 02:29:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:29:55 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2206)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4791)
+Completed 200 OK in 31ms (Views: 29.3ms | Allocations: 5569)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:29:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.6ms | Allocations: 3638)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 5829)
+Completed 200 OK in 29ms (Views: 27.1ms | Allocations: 6391)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:30:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"4", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 28.7ms | Allocations: 11611)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 13808)
+Completed 200 OK in 44ms (Views: 42.9ms | Allocations: 14280)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:30:01 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"4", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 37.1ms | Allocations: 15236)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 17429)
+Completed 200 OK in 58ms (Views: 56.1ms | Allocations: 17905)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:30:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"4", "subject1"=>"hj", "score1"=>"12", "subject2"=>"j", "score2"=>"4", "subject3"=>"dg", "score3"=>"5", "subject4"=>"l", "score4"=>"3", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result?score=12&sub=hj
+Completed 302 Found in 9ms (Allocations: 880)
+
+
+Started GET "/main/result?score=12&sub=hj" for 127.0.0.1 at 2022-09-22 02:30:13 +0700
+Processing by MainController#result as HTML
+  Parameters: {"score"=>"12", "sub"=>"hj"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 1.2ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2532)
+Completed 200 OK in 19ms (Views: 18.5ms | Allocations: 2848)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-22 02:30:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/main/test"):
+  
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:30:56 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.1ms | Allocations: 3287)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 5863)
+Completed 200 OK in 36ms (Views: 32.2ms | Allocations: 6846)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:30:59 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"6", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 40.4ms | Allocations: 14367)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 16558)
+Completed 200 OK in 51ms (Views: 50.0ms | Allocations: 17101)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:22 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 17.4ms | Allocations: 5613)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 8181)
+Completed 200 OK in 49ms (Views: 43.4ms | Allocations: 9210)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:24 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 8ms (Allocations: 1587)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:27:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 7ms (Allocations: 1498)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      @idx = @listnum.each_with_index.max[1]
+                                         ^^^):
+  
+app/controllers/main_controller.rb:27:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:45 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"5", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 50.0ms | Allocations: 14999)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 17575)
+Completed 200 OK in 77ms (Views: 75.3ms | Allocations: 18572)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"df", "score4"=>"", "subject5"=>"", "score5"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 52.6ms | Allocations: 18501)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 20692)
+Completed 200 OK in 73ms (Views: 71.8ms | Allocations: 21233)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:51 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "subject5"=>"", "score5"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 45.1ms | Allocations: 18947)
+  Rendered layout layouts/application.html.erb (Duration: 74.4ms | Allocations: 21149)
+Completed 200 OK in 85ms (Views: 77.3ms | Allocations: 21647)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:52 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "subject3"=>"", "score3"=>"", "subject4"=>"", "score4"=>"", "subject5"=>"", "score5"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 49.5ms | Allocations: 18954)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 21150)
+Completed 200 OK in 62ms (Views: 61.1ms | Allocations: 21630)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 02:32:57 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2012)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4216)
+Completed 200 OK in 25ms (Views: 24.6ms | Allocations: 4535)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:32:59 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 14.4ms | Allocations: 5998)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 8204)
+Completed 200 OK in 33ms (Views: 31.7ms | Allocations: 8670)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 02:33:01 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"2", "subject1"=>"", "score1"=>"", "subject2"=>"", "score2"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 16.5ms | Allocations: 7814)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 10005)
+Completed 200 OK in 36ms (Views: 34.2ms | Allocations: 10478)
+
+
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecords (20220922050431)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "score" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220922050431"]]
+  [1m[36mTRANSACTION (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-22 05:04:46.136375"], ["updated_at", "2022-09-22 05:04:46.136375"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:32:01 +0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 69.2ms | Allocations: 3783)
+  Rendered layout layouts/application.html.erb (Duration: 957.3ms | Allocations: 37789)
+Completed 200 OK in 1003ms (Views: 971.4ms | ActiveRecord: 0.0ms | Allocations: 41207)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:32:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"4", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 55.7ms | Allocations: 12506)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 14815)
+Completed 200 OK in 95ms (Views: 90.0ms | ActiveRecord: 0.0ms | Allocations: 15609)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:32:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"4", "subject1"=>"a", "score1"=>"50", "subject2"=>"b", "score2"=>"45", "subject3"=>"c", "score3"=>"53", "subject4"=>"d", "score4"=>"23", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Allocations: 1072)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:32:57 +0700
+Processing by MainController#result as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (1.6ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "a"], ["score", 50.0], ["created_at", "2022-09-22 05:32:57.705644"], ["updated_at", "2022-09-22 05:32:57.705644"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "b"], ["score", 45.0], ["created_at", "2022-09-22 05:32:57.744389"], ["updated_at", "2022-09-22 05:32:57.744389"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "c"], ["score", 53.0], ["created_at", "2022-09-22 05:32:57.775759"], ["updated_at", "2022-09-22 05:32:57.775759"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "d"], ["score", 23.0], ["created_at", "2022-09-22 05:32:57.803452"], ["updated_at", "2022-09-22 05:32:57.803452"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 1.4ms | Allocations: 350)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 2872)
+Completed 200 OK in 206ms (Views: 26.6ms | ActiveRecord: 25.0ms | Allocations: 16001)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:33:04 +0700
+  
+ArgumentError (Before process_action callback :verify_authencity_token has not been defined):
+  
+app/controllers/score_controller.rb:2:in `<class:ScoreController>'
+app/controllers/score_controller.rb:1:in `<main>'
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:34:03 +0700
+Processing by ScoreController#list as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1753)
+  Rendered layout layouts/application.html.erb (Duration: 124.6ms | Allocations: 15814)
+Completed 200 OK in 196ms (Views: 143.9ms | ActiveRecord: 1.8ms | Allocations: 20357)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:34:17 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2220)
+  Rendered layout layouts/application.html.erb (Duration: 97.2ms | Allocations: 4612)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms | Allocations: 5395)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:34:24 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1802)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 4001)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms | Allocations: 4292)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:34:27 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 33.4ms | Allocations: 6447)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 8638)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.0ms | Allocations: 9221)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:34:35 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"2", "subject1"=>"e", "score1"=>"80", "subject2"=>"f", "score2"=>"40", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 466)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:34:35 +0700
+Processing by MainController#result as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "e"], ["score", 80.0], ["created_at", "2022-09-22 05:34:35.901315"], ["updated_at", "2022-09-22 05:34:35.901315"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "f"], ["score", 40.0], ["created_at", "2022-09-22 05:34:35.934086"], ["updated_at", "2022-09-22 05:34:35.934086"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 5.7ms | Allocations: 287)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 2634)
+Completed 200 OK in 97ms (Views: 30.6ms | ActiveRecord: 11.8ms | Allocations: 6735)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:34:39 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1360)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 3714)
+Completed 200 OK in 56ms (Views: 44.9ms | ActiveRecord: 0.2ms | Allocations: 4599)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:34:49 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 3733)
+Completed 200 OK in 52ms (Views: 40.6ms | ActiveRecord: 0.2ms | Allocations: 4600)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:37:27 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2181)
+  Rendered layout layouts/application.html.erb (Duration: 112.0ms | Allocations: 16002)
+Completed 200 OK in 126ms (Views: 121.5ms | Allocations: 16973)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:37:33 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"5", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 65.6ms | Allocations: 14855)
+  Rendered layout layouts/application.html.erb (Duration: 87.0ms | Allocations: 17049)
+Completed 200 OK in 97ms (Views: 95.9ms | Allocations: 17622)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:37:53 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"t", "score1"=>"99", "subject2"=>"u", "score2"=>"85", "subject3"=>"v", "score3"=>"40", "subject4"=>"x", "score4"=>"11", "subject5"=>"", "score5"=>"23", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 97.8ms | Allocations: 14940)
+  Rendered layout layouts/application.html.erb (Duration: 121.3ms | Allocations: 17144)
+Completed 200 OK in 130ms (Views: 128.9ms | Allocations: 17651)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:37:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"t", "score1"=>"99", "subject2"=>"u", "score2"=>"85", "subject3"=>"v", "score3"=>"40", "subject4"=>"x", "score4"=>"11", "subject5"=>"y", "score5"=>"23", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 13ms (Allocations: 885)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:37:57 +0700
+Processing by MainController#result as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/main_controller.rb:36:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "e"], ["score", 80.0], ["created_at", "2022-09-22 05:37:57.311418"], ["updated_at", "2022-09-22 05:37:57.311418"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "f"], ["score", 40.0], ["created_at", "2022-09-22 05:37:57.340036"], ["updated_at", "2022-09-22 05:37:57.340036"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", nil], ["score", nil], ["created_at", "2022-09-22 05:37:57.370014"], ["updated_at", "2022-09-22 05:37:57.370014"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", nil], ["score", nil], ["created_at", "2022-09-22 05:37:57.395711"], ["updated_at", "2022-09-22 05:37:57.395711"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", nil], ["score", nil], ["created_at", "2022-09-22 05:37:57.426293"], ["updated_at", "2022-09-22 05:37:57.426293"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/main_controller.rb:44:in `result'
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 32.0ms | Allocations: 13003)
+
+
+  
+ArgumentError (comparison of Array with Array failed):
+  
+app/controllers/main_controller.rb:48:in `each'
+app/controllers/main_controller.rb:48:in `each_with_index'
+app/controllers/main_controller.rb:48:in `each'
+app/controllers/main_controller.rb:48:in `max'
+app/controllers/main_controller.rb:48:in `result'
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:39:07 +0700
+Processing by MainController#result as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/main_controller.rb:45:in `result'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/main_controller.rb:45:in `result'
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.7ms | Allocations: 4006)
+
+
+  
+ArgumentError (comparison of Array with Array failed):
+  
+app/controllers/main_controller.rb:49:in `each'
+app/controllers/main_controller.rb:49:in `each_with_index'
+app/controllers/main_controller.rb:49:in `each'
+app/controllers/main_controller.rb:49:in `max'
+app/controllers/main_controller.rb:49:in `result'
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:40:08 +0700
+Processing by MainController#result as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/main_controller.rb:45:in `result'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 1103)
+
+
+  
+ArgumentError (comparison of Array with Array failed):
+  
+app/controllers/main_controller.rb:49:in `each'
+app/controllers/main_controller.rb:49:in `each_with_index'
+app/controllers/main_controller.rb:49:in `each'
+app/controllers/main_controller.rb:49:in `max'
+app/controllers/main_controller.rb:49:in `result'
+Started POST "/__web_console/repl_sessions/585184ac8c905dfb2355cd327a1c51c0/trace" for 127.0.0.1 at 2022-09-22 12:40:31 +0700
+Started POST "/__web_console/repl_sessions/585184ac8c905dfb2355cd327a1c51c0/trace" for 127.0.0.1 at 2022-09-22 12:40:33 +0700
+Started POST "/__web_console/repl_sessions/585184ac8c905dfb2355cd327a1c51c0/trace" for 127.0.0.1 at 2022-09-22 12:40:37 +0700
+Started POST "/__web_console/repl_sessions/585184ac8c905dfb2355cd327a1c51c0/trace" for 127.0.0.1 at 2022-09-22 12:40:38 +0700
+Started POST "/__web_console/repl_sessions/585184ac8c905dfb2355cd327a1c51c0/trace" for 127.0.0.1 at 2022-09-22 12:40:38 +0700
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:41:50 +0700
+Processing by MainController#result as HTML
+Completed 500 Internal Server Error in 16ms (Allocations: 1509)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+    idx = $listnum.each_with_index.max[1]
+                                      ^^^):
+  
+app/controllers/main_controller.rb:41:in `result'
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:42:43 +0700
+Processing by MainController#result as HTML
+Completed 500 Internal Server Error in 15ms (Allocations: 2065)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/main_controller.rb:44:in `result'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:42:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"t", "score1"=>"99", "subject2"=>"u", "score2"=>"85", "subject3"=>"v", "score3"=>"40", "subject4"=>"x", "score4"=>"11", "subject5"=>"y", "score5"=>"23", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 16ms (Allocations: 959)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:42:50 +0700
+Processing by MainController#result as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/main_controller.rb:36:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "t"], ["score", 99.0], ["created_at", "2022-09-22 05:42:50.631611"], ["updated_at", "2022-09-22 05:42:50.631611"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "u"], ["score", 85.0], ["created_at", "2022-09-22 05:42:50.662995"], ["updated_at", "2022-09-22 05:42:50.662995"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "v"], ["score", 40.0], ["created_at", "2022-09-22 05:42:50.690135"], ["updated_at", "2022-09-22 05:42:50.690135"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "x"], ["score", 11.0], ["created_at", "2022-09-22 05:42:50.721557"], ["updated_at", "2022-09-22 05:42:50.721557"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "y"], ["score", 23.0], ["created_at", "2022-09-22 05:42:50.749674"], ["updated_at", "2022-09-22 05:42:50.749674"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 33.7ms | Allocations: 12439)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/main_controller.rb:44:in `result'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:43:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"5", "subject1"=>"t", "score1"=>"99", "subject2"=>"u", "score2"=>"85", "subject3"=>"v", "score3"=>"40", "subject4"=>"x", "score4"=>"11", "subject5"=>"y", "score5"=>"23", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 431)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:43:00 +0700
+Processing by MainController#result as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "t"], ["score", 99.0], ["created_at", "2022-09-22 05:43:00.916862"], ["updated_at", "2022-09-22 05:43:00.916862"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "u"], ["score", 85.0], ["created_at", "2022-09-22 05:43:00.942848"], ["updated_at", "2022-09-22 05:43:00.942848"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "v"], ["score", 40.0], ["created_at", "2022-09-22 05:43:00.972677"], ["updated_at", "2022-09-22 05:43:00.972677"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "x"], ["score", 11.0], ["created_at", "2022-09-22 05:43:01.001872"], ["updated_at", "2022-09-22 05:43:01.001872"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "y"], ["score", 23.0], ["created_at", "2022-09-22 05:43:01.029186"], ["updated_at", "2022-09-22 05:43:01.029186"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 27.6ms | Allocations: 10200)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/main_controller.rb:44:in `result'
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:44:02 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1948)
+  Rendered layout layouts/application.html.erb (Duration: 115.8ms | Allocations: 15599)
+Completed 200 OK in 128ms (Views: 127.3ms | Allocations: 16246)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:44:07 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3208)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 5399)
+Completed 200 OK in 41ms (Views: 39.7ms | Allocations: 5913)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:44:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"1", "subject1"=>"z", "score1"=>"20", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 13ms (Allocations: 891)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:44:13 +0700
+Processing by MainController#result as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/main_controller.rb:36:in `block in result'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "z"], ["score", 20.0], ["created_at", "2022-09-22 05:44:13.624683"], ["updated_at", "2022-09-22 05:44:13.624683"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 1.7ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 2885)
+Completed 200 OK in 102ms (Views: 29.7ms | ActiveRecord: 19.6ms | Allocations: 7971)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:44:17 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 1513)
+
+
+  
+ArgumentError (comparison of Array with Array failed):
+  
+app/controllers/score_controller.rb:13:in `each'
+app/controllers/score_controller.rb:13:in `each_with_index'
+app/controllers/score_controller.rb:13:in `each'
+app/controllers/score_controller.rb:13:in `max'
+app/controllers/score_controller.rb:13:in `list'
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:45:20 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 42.4ms | Allocations: 4453)
+  Rendered layout layouts/application.html.erb (Duration: 65.6ms | Allocations: 7080)
+Completed 200 OK in 96ms (Views: 82.9ms | ActiveRecord: 0.4ms | Allocations: 8536)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:46:32 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 37.8ms | Allocations: 4437)
+  Rendered layout layouts/application.html.erb (Duration: 76.1ms | Allocations: 7234)
+Completed 200 OK in 101ms (Views: 87.3ms | ActiveRecord: 0.3ms | Allocations: 8906)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:03 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 42.7ms | Allocations: 4440)
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 7231)
+Completed 200 OK in 98ms (Views: 87.1ms | ActiveRecord: 0.3ms | Allocations: 8893)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:47:05 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 19.3ms | Allocations: 2208)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 4588)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.0ms | Allocations: 5248)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:47:09 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 19.1ms | Allocations: 3639)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 5830)
+Completed 200 OK in 54ms (Views: 45.5ms | ActiveRecord: 0.0ms | Allocations: 6400)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:47:14 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"1", "subject1"=>"q", "score1"=>"12", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 427)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:47:14 +0700
+Processing by MainController#result as HTML
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "z"], ["score", 20.0], ["created_at", "2022-09-22 05:47:14.616551"], ["updated_at", "2022-09-22 05:47:14.616551"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 2.4ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 2639)
+Completed 200 OK in 66ms (Views: 29.5ms | ActiveRecord: 8.5ms | Allocations: 4864)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:17 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 36.7ms | Allocations: 4274)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 6634)
+Completed 200 OK in 79ms (Views: 65.6ms | ActiveRecord: 0.4ms | Allocations: 7688)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:28 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 34.9ms | Allocations: 4270)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 6618)
+Completed 200 OK in 76ms (Views: 67.5ms | ActiveRecord: 0.4ms | Allocations: 7640)
+
+
+Started GET "/score/delete?id=22&method=delete" for 127.0.0.1 at 2022-09-22 12:47:32 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"22", "method"=>"delete"}
+  [1m[36mRecord Load (0.9ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 146ms (ActiveRecord: 5.1ms | Allocations: 10256)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:32 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 20.1ms | Allocations: 4087)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 6617)
+Completed 200 OK in 58ms (Views: 47.7ms | ActiveRecord: 0.3ms | Allocations: 7707)
+
+
+Started GET "/score/delete?id=23&method=delete" for 127.0.0.1 at 2022-09-22 12:47:34 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"23", "method"=>"delete"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 35ms (ActiveRecord: 4.1ms | Allocations: 2351)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:34 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 33.2ms | Allocations: 3854)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 6240)
+Completed 200 OK in 72ms (Views: 61.3ms | ActiveRecord: 0.3ms | Allocations: 7240)
+
+
+Started GET "/score/delete?id=1&method=delete" for 127.0.0.1 at 2022-09-22 12:47:35 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"1", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 35ms (ActiveRecord: 7.5ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:35 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 31.5ms | Allocations: 3646)
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 6012)
+Completed 200 OK in 68ms (Views: 58.9ms | ActiveRecord: 0.3ms | Allocations: 7000)
+
+
+Started GET "/score/delete?id=2&method=delete" for 127.0.0.1 at 2022-09-22 12:47:36 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"2", "method"=>"delete"}
+  [1m[36mRecord Load (3.7ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 37ms (ActiveRecord: 7.7ms | Allocations: 2334)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:36 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 24.2ms | Allocations: 3438)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 5792)
+Completed 200 OK in 63ms (Views: 55.9ms | ActiveRecord: 0.3ms | Allocations: 6768)
+
+
+Started GET "/score/delete?id=2&method=delete" for 127.0.0.1 at 2022-09-22 12:47:36 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"2", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 14ms (ActiveRecord: 0.1ms | Allocations: 753)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:36 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (4.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 24.8ms | Allocations: 3438)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 5804)
+Completed 200 OK in 69ms (Views: 59.1ms | ActiveRecord: 4.5ms | Allocations: 6780)
+
+
+Started GET "/score/delete?id=2&method=delete" for 127.0.0.1 at 2022-09-22 12:47:36 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"2", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 10ms (ActiveRecord: 0.1ms | Allocations: 753)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:36 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 28.3ms | Allocations: 3438)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 5810)
+Completed 200 OK in 67ms (Views: 59.1ms | ActiveRecord: 0.3ms | Allocations: 6787)
+
+
+Started GET "/score/delete?id=2&method=delete" for 127.0.0.1 at 2022-09-22 12:47:37 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"2", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 12ms (ActiveRecord: 0.1ms | Allocations: 753)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:37 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 53.0ms | Allocations: 3438)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 5801)
+Completed 200 OK in 97ms (Views: 85.8ms | ActiveRecord: 0.3ms | Allocations: 6778)
+
+
+Started GET "/score/delete?id=2&method=delete" for 127.0.0.1 at 2022-09-22 12:47:37 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"2", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 11ms (ActiveRecord: 0.1ms | Allocations: 753)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:37 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 31.9ms | Allocations: 3438)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 5801)
+Completed 200 OK in 64ms (Views: 56.3ms | ActiveRecord: 0.3ms | Allocations: 6778)
+
+
+Started GET "/score/delete?id=3&method=delete" for 127.0.0.1 at 2022-09-22 12:47:38 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"3", "method"=>"delete"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 36ms (ActiveRecord: 8.7ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:38 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 23.5ms | Allocations: 3230)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 5593)
+Completed 200 OK in 65ms (Views: 52.5ms | ActiveRecord: 0.3ms | Allocations: 6557)
+
+
+Started GET "/score/delete?id=4&method=delete" for 127.0.0.1 at 2022-09-22 12:47:39 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"4", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 36ms (ActiveRecord: 4.0ms | Allocations: 2336)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:39 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 23.8ms | Allocations: 3022)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 5373)
+Completed 200 OK in 58ms (Views: 51.7ms | ActiveRecord: 0.3ms | Allocations: 6325)
+
+
+Started GET "/score/delete?id=5&method=delete" for 127.0.0.1 at 2022-09-22 12:47:40 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"5", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 41ms (ActiveRecord: 6.1ms | Allocations: 2334)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:40 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 19.3ms | Allocations: 2814)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 5171)
+Completed 200 OK in 63ms (Views: 52.4ms | ActiveRecord: 0.2ms | Allocations: 6111)
+
+
+Started GET "/score/delete?id=6&method=delete" for 127.0.0.1 at 2022-09-22 12:47:41 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"6", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 38ms (ActiveRecord: 4.2ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:41 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2606)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 4963)
+Completed 200 OK in 59ms (Views: 45.8ms | ActiveRecord: 0.2ms | Allocations: 5891)
+
+
+Started GET "/score/delete?id=8&method=delete" for 127.0.0.1 at 2022-09-22 12:47:43 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"8", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 39ms (ActiveRecord: 9.4ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:43 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2398)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4755)
+Completed 200 OK in 56ms (Views: 47.3ms | ActiveRecord: 0.2ms | Allocations: 5671)
+
+
+Started GET "/score/delete?id=7&method=delete" for 127.0.0.1 at 2022-09-22 12:47:44 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"7", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 39ms (ActiveRecord: 6.0ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:44 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2190)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 4555)
+Completed 200 OK in 60ms (Views: 51.5ms | ActiveRecord: 0.3ms | Allocations: 5460)
+
+
+Started GET "/score/delete?id=14&method=delete" for 127.0.0.1 at 2022-09-22 12:47:45 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"14", "method"=>"delete"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 36ms (ActiveRecord: 4.5ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:45 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1982)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 4341)
+Completed 200 OK in 55ms (Views: 42.9ms | ActiveRecord: 0.2ms | Allocations: 5233)
+
+
+Started GET "/score/delete?id=13&method=delete" for 127.0.0.1 at 2022-09-22 12:47:46 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"13", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 35ms (ActiveRecord: 5.3ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:46 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (2.1ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1774)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 4130)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 2.1ms | Allocations: 5010)
+
+
+Started GET "/score/delete?id=16&method=delete" for 127.0.0.1 at 2022-09-22 12:47:47 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"16", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 41ms (ActiveRecord: 5.1ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:47 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1566)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 3930)
+Completed 200 OK in 48ms (Views: 40.4ms | ActiveRecord: 0.3ms | Allocations: 4798)
+
+
+Started GET "/score/delete?id=17&method=delete" for 127.0.0.1 at 2022-09-22 12:47:48 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"17", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 38ms (ActiveRecord: 5.7ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:48 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 3706)
+Completed 200 OK in 48ms (Views: 36.5ms | ActiveRecord: 0.2ms | Allocations: 4562)
+
+
+Started GET "/score/delete?id=15&method=delete" for 127.0.0.1 at 2022-09-22 12:47:49 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"15", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 37ms (ActiveRecord: 4.0ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:49 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1150)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 3495)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.2ms | Allocations: 4339)
+
+
+Started GET "/score/delete?id=20&method=delete" for 127.0.0.1 at 2022-09-22 12:47:51 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"20", "method"=>"delete"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 33ms (ActiveRecord: 4.2ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:47:51 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 2.5ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 3296)
+Completed 200 OK in 44ms (Views: 36.1ms | ActiveRecord: 0.2ms | Allocations: 4128)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:47:56 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1856)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4055)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 4329)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:47:59 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3202)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 5393)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 5881)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:48:05 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"1", "subject1"=>"q", "score1"=>"15", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:48:05 +0700
+Processing by MainController#result as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "z"], ["score", 20.0], ["created_at", "2022-09-22 05:48:05.467684"], ["updated_at", "2022-09-22 05:48:05.467684"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.4ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 2501)
+Completed 200 OK in 65ms (Views: 25.1ms | ActiveRecord: 9.4ms | Allocations: 4617)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:48:10 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1150)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 3508)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.2ms | Allocations: 4356)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:48:18 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1150)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 3528)
+Completed 200 OK in 48ms (Views: 42.0ms | ActiveRecord: 0.2ms | Allocations: 4373)
+
+
+Started GET "/score/delete?id=12&method=delete" for 127.0.0.1 at 2022-09-22 12:48:25 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"12", "method"=>"delete"}
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 37ms (ActiveRecord: 4.4ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:48:25 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 8.9ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 3286)
+Completed 200 OK in 46ms (Views: 35.0ms | ActiveRecord: 0.2ms | Allocations: 4118)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 12:48:27 +0700
+Processing by MainController#select as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/select.html.erb within layouts/application
+  Rendered main/select.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1814)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4014)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4286)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:49:01 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"true", "num"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 31.6ms | Allocations: 6001)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 8192)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 8661)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-22 12:49:11 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "select"=>"false", "num"=>"2", "subject1"=>"q", "score1"=>"23", "subject2"=>"w", "score2"=>"44", "commit"=>"Submit"}
+Redirected to http://localhost:3000/main/result
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 419)
+
+
+Started GET "/main/result" for 127.0.0.1 at 2022-09-22 12:49:11 +0700
+Processing by MainController#result as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "z"], ["score", 20.0], ["created_at", "2022-09-22 05:49:11.540201"], ["updated_at", "2022-09-22 05:49:11.540201"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("subject", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "q"], ["score", 12.0], ["created_at", "2022-09-22 05:49:11.568303"], ["updated_at", "2022-09-22 05:49:11.568303"]]
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:39:in `block in result'
+  Rendering layout layouts/application.html.erb
+  Rendering main/result.html.erb within layouts/application
+  Rendered main/result.html.erb within layouts/application (Duration: 0.4ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 2447)
+Completed 200 OK in 81ms (Views: 23.7ms | ActiveRecord: 15.2ms | Allocations: 6262)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:49:16 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 3712)
+Completed 200 OK in 49ms (Views: 39.1ms | ActiveRecord: 0.2ms | Allocations: 4568)
+
+
+Started GET "/score/delete?id=25&method=delete" for 127.0.0.1 at 2022-09-22 12:49:23 +0700
+Processing by ScoreController#delete as HTML
+  Parameters: {"id"=>"25", "method"=>"delete"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/score_controller.rb:36:in `delete'
+Redirected to http://localhost:3000/score/list
+Completed 302 Found in 37ms (ActiveRecord: 7.6ms | Allocations: 2333)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-22 12:49:23 +0700
+Processing by ScoreController#list as HTML
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/score_controller.rb:9:in `list'
+  Rendering layout layouts/application.html.erb
+  Rendering score/list.html.erb within layouts/application
+  Rendered score/list.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1150)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 3525)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 0.2ms | Allocations: 4369)
+
+

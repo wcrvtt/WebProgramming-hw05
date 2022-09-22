@@ -1,0 +1,20 @@
+<%= "Max Score is #{@maxscore}, Subject #{@maxsub}" %><br>
+<%= "Sum Score is #{@sumscore}" %><br>
+<%= link_to "Add to Record", controller: 'main', action: 'select' %>
+
+<table>
+  <tr>
+    <th>Subject </th>
+    <th>Score </th>
+    <th>Edit </th>
+    <th>Delete </th>
+  </tr>
+  <% for e in @records%>
+    <tr>
+      <td><%= e.subject %></td>
+      <td><%= e.score %></td>
+      <td><%= link_to "edit", controller: 'score', action: 'edit',id: e.id, select: "true", :method => :edit %></td>
+      <td><%= link_to "delete", controller: 'score', action: 'delete',id: e.id, :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>

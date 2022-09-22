@@ -1,0 +1,15 @@
+<%= form_with url: "/main/test", method: :post, data: {turbo: false} do |f| %>
+  <div class="field">
+    <%= f.hidden_field :select, value: false %>
+    <%= f.hidden_field :id, value: @id %>
+    
+    <%= f.label :query, "subject"%>
+    <%= f.text_feild :"subject", value: @subject %>
+    
+    <%= f.label :query, "score"%>
+    <%= f.text_feild :"score", value: @score %>
+    
+    <%= f.submit "Submit"%>
+    <%= link_to "Back", controller: 'score', action: 'list' %>
+  </div>
+<% end %>
